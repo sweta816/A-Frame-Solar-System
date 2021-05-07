@@ -1,0 +1,151 @@
+<!DOCTYPE html> <!--render the file as html filr-->
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="stylesheet" href="css/style.css">
+  <title>Solar System</title>
+  <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+</head>
+<body >
+<a-scene background="color: #87CEEB">
+<a-assets>
+  <img 
+      id="sun"
+      src="sun.jpg">
+  <img 
+      id="Mercury"
+      src="mercury.jpg">
+      <img 
+      id="venus"
+      src="venus.jpg">
+    <img
+      id="earth"
+      src="earth.jpg">
+    <img 
+      id="mars"
+      src="mars.jpg">
+    <img 
+      id="jupiter"
+      src="jupiter.jpg">
+    <img 
+      id="saturn"
+      src="saturn.jpg">
+    <img 
+      id="uranus"
+      src="uranus.jpg">
+    <img 
+      id="neptune"
+      src="neptune.jpg">
+   <img 
+      id="space"
+      src="space.jpg">
+</a-assets>
+<!--  adding sky-->
+<a-sky src="#space"></a-sky>
+<!-- add sound -->
+<a-scene>
+  <a-sound src="src: url(uni.mp3)" autoplay="true" position="0 2 5"></a-sound>
+</a-scene>
+
+<!--adding light-->
+<!-- Point lights are like light bulbs; we can position them around the scene, and the effect of the point light on an entity 
+  depends on its distance to the entity -->
+<!-- <a-light 
+  type="point" 
+  intensity="1" 
+  position="-15 -4 -15"></a-light> -->
+
+ <!-- planets with sun -->
+ <!-- Sun -->
+<a-sphere 
+
+  src="#sun"
+  position="-14 2 -15" 
+  radius="2"
+  >
+</a-sphere>
+ <!-- Mercury -->
+ <a-sphere 
+ src="#Mercury"
+ position="-7 2 -15" 
+ radius="0.5"
+ animation="property: object3D.rotation.y;
+  to: 360;
+  dur: 10000;
+  loop: true">
+</a-sphere>
+
+ <!-- venus -->
+ <a-sphere 
+ src="#venus"
+ position="-5 2 -15" 
+ radius="0.7"
+>
+</a-sphere>
+
+<!-- EARTH -->
+<a-sphere 
+src="#earth"
+position="-2 2 -15" 
+radius="0.8"
+animation="property: object3D.rotation.y;
+  to: 360;
+  dur: 10000;
+  loop: true">
+</a-sphere>
+
+<!-- EARTH -->
+<a-sphere 
+src="#mars"
+position="0 2 -15" 
+radius="0.8"
+animation="property: object3D.rotation.y;
+  to: 360;
+  dur: 10000;
+  loop: true">
+</a-sphere>
+
+<!-- jupiter -->
+<a-sphere 
+src="#jupiter"
+position="3 2 -15" 
+radius="1.4"
+animation="property: object3D.rotation.y;
+  to: 360;
+  dur: 10000;
+  loop: true">
+</a-sphere>
+<!-- saturn -->
+<a-sphere 
+src="#saturn"
+position="7 2 -15" 
+radius="1.2"
+animation="property: object3D.rotation.y;
+  to: 360;
+  dur: 10000;
+  loop: true">
+</a-sphere>
+<!-- uranus -->
+<a-sphere 
+src="#uranus"
+position="11 2 -15" 
+radius="1">
+</a-sphere>
+
+<!-- neptune -->
+<a-sphere 
+src="#neptune"
+position="14 2 -15" 
+radius="0.9"
+animation="property: object3D.rotation.y;
+  to: 360;
+  dur: 10000;
+  loop: true">
+</a-sphere>
+</a-scene>
+</body>
+
+</html>
+
